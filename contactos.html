@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-ES" xml:lang="es-ES">
+    <head>
+        <title>Nuestro Cine PY</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      
+        <link rel="stylesheet" href="css/sidebar.css" type="text/css" />		
+        <link rel="stylesheet" href="css/rightSidebar.css" type="text/css" />	
+        <link rel="stylesheet" href="css/azul_marino2.css" type="text/css" />
+        <link rel="stylesheet" href="css/jquery.ui.tabs.css" type="text/css" />
+	<link rel="stylesheet" href="css/common2.css" type="text/css" />
+        <style>
+           @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+
+           body{
+               
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+font-family: 'Arial', sans-serif;
+           }
+
+.contact_form{  
+    width: 550px; 
+  height: auto;
+  margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+  background-color: #F0F0E8; 
+  padding-left: 130px; 
+}
+
+
+input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #006633; 
+    margin-top: 10px;  
+    padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #006633; 
+    margin-top: 10px;  
+    padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+    float: center;  
+}
+
+
+button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;     
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #009999; 
+    border-color: #003333; 
+    border-style: solid; 
+    border-radius: 10px;    
+    width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+    color: #fff; 
+}
+
+
+span{
+    color: red; 
+}
+
+
+.aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+}
+
+
+h1{
+    font-size: 39px;  
+    text-align: letf; 
+    padding-bottom: 20px; 
+    color: #003333;
+}
+
+
+h3{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
+}
+
+
+p{
+    font-size: 14px; 
+    color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+        </style>
+    </head>
+    <body>
+        <div id="container">                      
+            <div id="header">
+                <div id="headerTitle">
+                    <h1>
+                        <img src="img/pageHeaderTitleImage_es_ES.jpg" width="1902" height="90" alt="Encabezado de página" />
+                    </h1>
+                </div>
+            </div>
+            
+            <div>                
+                <br><br><br><br><br><br><br><br>
+                <div style="line-height: 25px">
+                    
+                    
+                <div id="sidebar">
+                                                           
+                        
+                        
+                       <div class="contact_form">
+
+        <div class="formulario">            
+      <h1>Contactos:</h1>
+                <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+
+                    <form action="submeter-formulario.php" method="post">               
+
+                        
+                                <p>
+                                    <label for="nombre" class="colocar_nombre"><b>Nombre</b>
+                                        <span class="obligatorio">*</span>
+                                    </label>
+                                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre....">
+                                </p>
+                            
+                                <p>
+                                    <label for="email" class="colocar_email"><b>Correo Eléctronico</b>
+                                        <span class="obligatorio">*</span>
+                                    </label>
+                                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu correo eléctronico...">
+                                </p>
+                        
+                                <p>
+                                    <label for="telefone" class="colocar_telefono"><b>Teléfono</b>
+                                    </label>
+                                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono u celular...">
+                                </p>     
+                                                        
+                                <p>
+                                    <label for="asunto" class="colocar_asunto"><b>Asunto</b>
+                                        <span class="obligatorio">*</span>
+                                    </label>
+                                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto...">
+                                </p>        
+                                <p>
+                                    <label for="mensaje" class="colocar_mensaje"><b>Mensaje</b>
+                                        <span class="obligatorio">*</span>
+                                    </label>                     
+                                      <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                                    
+                        <button  name="enviar_formulario" id="enviar" onclick="alert ('Mensaje Enviado')"><p>Enviar</p></button>
+                               <p class="aviso">
+                                    <span class="obligatorio"> * </span>los campos son obligatorios.
+                                </p>                    
+                        
+                    </form>
+        </div>  
+    </div> 
+    
+    	
+                                           
+</div>
+     
+                                                                                      
+                                      
+                    </div>
+                </div>
+
+                                        <div id="main">
+                                            <div id="navbar">
+                                                <ul class="menu">
+                                                    <li id="home"><a href="inicio.html">Inicio</a></li>
+                                                    <li id="about"><a href="noticias.html">Noticias</a></li>
+                                                    <li id="about"><a href="peliculas.html">Peliculas</a></li>
+                                                    <li id="announcements"><a href="reseñas.hthml">Reseñas</a></li>
+                                                    <li id="archives"><a href="nosotros.html">Nosotros</a></li>
+                                                    <li id="announcements"><a href="contactos.html">Contactos</a></li>
+                                            </div>
+                                          
+                                            <br><br>
+                                            
+
+
+                                                
+                                                
+                                                    
+                                                <!-- start AddThis -->
+                                            
+                                                <!-- end AddThis -->
+                                                
+
+
+                                            </div><!-- content -->
+                                        </div><!-- main -->
+                                        </div><!-- body -->
+
+
+                                        <div id="footer">
+                                            <div id="footerContent">
+                                                <div id="navegacion">
+                                                    <ul class="menu">
+                                                        <li id="home"><a href="inicio.html">Inicio</a></li>
+                                                        <li id="about"><a href="noticias.html">Noticias</a></li>                                                        
+                                                        <li class="navItem" id="navItem-1"><a href="nosotros.html">Acerca De</a></li>                                                    
+                                                    </ul>	
+                                                </div>
+                                                <div class="debugStats">
+                                                    <div id="contF">
+                                                        <div id="f1">
+                                                            <p style="text-align: justify !important;">
+								<a href="#">Políticas de Privacidad</a>
+								El responsable del tratamiento de los datos personales del interesado te informa de que estos datos serán tratados de conformidad con lo dispuesto en las normativas vigentes en protección de datos personales, el Reglamento (UE) 2016/679 de 27 de abril de 2016 (RGPD) y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales.</p></div>
+							<div id="f2">
+                                                            <div id=""><p style="text-align: justify !important;"><a href="#"> <p style="text-align: justify !important;">
+								<a href="#">
+                                                            </div>
+                                                        </div></div>
+                                                            <div id="certificaciones">
+                                                                <div class="new">
+                                                                <img src="img/logohtml.png" width="75" height="90"/><br/>
+                                                                </div>
+                                                                <div class="new">
+                                                                
+								<img src="img/logocss.png"  width="75" height="90" /> 
+                                                                                                                              
+                                                                </div>
+                                                                
+                                                            </div>
+                                                    <br><br>
+                                                </div>
+
+                                            </div><!-- footerContent -->
+                                            <div class="copyright"> 
+                                                <span class="copy" style="color:white">&copy; 2020</span>   
+                                                <span class="org">                                               
+                                                </span> 	
+                                            </div>
+                                            <!-- FOOTPRINT HTML START   PARA CORSALUD-->
+
+                                            <!-- FOOTPRINT HTML END -->
+                                        </div><!-- footer -->
+                                        </body>
+                                        </html>

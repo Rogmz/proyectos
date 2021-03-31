@@ -1,0 +1,816 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-ES" xml:lang="es-ES">
+    <head>
+        <title>Nuestro Cine PY</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      
+        <link rel="stylesheet" href="css/sidebar.css" type="text/css" />		
+        <link rel="stylesheet" href="css/rightSidebar.css" type="text/css" />	
+        <link rel="stylesheet" href="css/azul_marino.css" type="text/css" />
+        <link rel="stylesheet" href="css/jquery.ui.tabs.css" type="text/css" />
+	<link rel="stylesheet" href="css/common.css" type="text/css" />
+        <link rel="stylesheet" href="css/csspeliculas.css" type="text/css" />
+        <style>
+            div#imagen7cajas{
+width:207px;
+height:311px;
+background-image:url("img/posters/7cajas.jpg");
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagentruenos{
+width:220px;
+height:311px;
+background-image:url(img/posters/truenos.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenuniverso{
+width:220px;
+height:311px;
+background-image:url(img/posters/universoservilleta.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenmangore{
+width:220px;
+height:311px;
+background-image:url(img/posters/mangore.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagen{
+width:220px;
+height:303px;
+background-image:url(img/posters/trenparaguay.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenmirame{
+width:220px;
+height:309px;
+background-image:url(img/posters/miramenometokei.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagensecuestro{
+width:218px;
+height:311px;
+background-image:url(img/posters/elsecuestro.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagencerro{
+width:217px;
+height:311px;
+background-image:url(img/posters/cerrocora.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenchipa{
+width:220px;
+height:308px;
+background-image:url(img/posters/lachiperita.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenmorgue{
+width:218px;
+height:311px;
+background-image:url(img/posters/morgue.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagencosta{
+width:220px;
+height:311px;
+background-image:url(img/posters/costadulce.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenorsai{
+width:218px;
+height:311px;
+background-image:url(img/posters/orsai.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenlas{
+width:220px;
+height:293px;
+background-image:url(img/posters/lasherederas.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagencari{
+width:217px;
+height:311px;
+background-image:url(img/posters/carimea.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagensangre{
+width:207px;
+height:311px;
+background-image:url(img/posters/lasangreysemilla.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagentiempo{
+width:220px;
+height:311px;
+background-image:url(img/posters/eltiemponublado.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenhosp{
+width:219px;
+height:311px;
+background-image:url(img/posters/hospitaldepobres.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenchicas{
+width:220px;
+height:311px;
+background-image:url(img/posters/chicasnuevas.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagensupre{
+width:220px;
+height:307px;
+background-image:url(img/posters/elsupremomanuscrito.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenhamaca{
+width:220px;
+height:311px;
+background-image:url(img/posters/hamacaparaguaya.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenenamorada{
+width:220px;
+height:257px;
+background-image:url(img/posters/laenamorada.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenesperanza{
+width:220px;
+height:308px;
+background-image:url(img/posters/esperanza.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagensanti{
+width:220px;
+height:311px;
+background-image:url(img/posters/santificarloprofano.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenleal{
+width:217px;
+height:311px;
+background-image:url(img/posters/leal.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenhojas{
+width:207px;
+height:311px;
+background-image:url(img/posters/eltruenoentrelashojas.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenguarani{
+width:220px;
+height:311px;
+background-image:url(img/posters/guarani.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagengritos{
+width:207px;
+height:311px;
+background-image:url(img/posters/gritosdelmonday.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenlatas{
+width:220px;
+height:304px;
+background-image:url(img/posters/latasvacias.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenlos{
+width:220px;
+height:303px;
+background-image:url(img/posters/losbuscadores.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenlibertad{
+width:218px;
+height:311px;
+background-image:url(img/posters/libertad.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenpy{
+width:220px;
+height:311px;
+background-image:url(img/posters/paraguaydrogabanana.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenru{
+width:218px;
+height:311px;
+background-image:url(img/posters/oreru.png);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenmatar{
+width:220px;
+height:299px;
+background-image:url(img/posters/mataraunmuerto.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenluna{
+width:218px;
+height:311px;
+background-image:url(img/posters/lunadecigarras.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenfeliz{
+width:218px;
+height:311px;
+background-image:url(img/posters/feliceslosquelloran.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagensaber{
+width:220px;
+height:273px;
+background-image:url(img/posters/sabercrecer.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenburra{
+width:206px;
+height:311px;
+background-image:url(img/posters/laburreritadeypacarai.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagenreden{
+width:218px;
+height:311px;
+background-image:url(img/posters/redencion.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+div#imagensuelo{
+width:220px;
+height:296px;
+background-image:url(img/posters/unsuelolejano.jpg);
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 2px solid #00006e;
+}
+        </style>
+        
+
+    </head>
+    <body>
+        <div id="container">
+            
+            
+            <div id="header">
+                <div id="headerTitle">
+                    <h1>
+                        <img src="img/pageHeaderTitleImage_es_ES.jpg" width="1902" height="90" alt="Encabezado de página" />
+                    </h1>
+                </div>
+            </div>
+            
+            <div id="body">
+                <br><br><br><br><br><br><br><br>
+                <div style="line-height: 25px">
+                    <table border="0" style="border-spacing: 13px 35px">
+                                                    <tr>
+                                                        <td>
+                                                            <div id="imagen7cajas">
+                                                                <div id="info7cajas">
+                                                                    <p id="headline7cajas">7 Cajas</p>
+                                                                    <p id="info27cajas"> Víctor, un carretillero de 17 años que <br>trabaja en el Mercado 4 de Asunción<br>, necesita conseguir dinero. Recibe <br>entoncesuna propuesta bastante <br>insólita: transportar siete cajas cuyo <br>contenido desconoce a cambio <br>de 100 dólares.</p>
+                                                                </div>
+                                                                    
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagentruenos">
+                                                                <div id="infotruenos">
+                                                                    <p id="headlinetruenos">Truenos</p>
+                                                                    <p id="info2truenos"> La historia de superación de un <br>joven mecánico, Maxi Silva, <br>apasionado por el mundo de las  <br>carreras de autos y que siempre <br>soñó con competir en la <br>" Copa Truenos".</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagenuniverso">
+                                                                <div id="infouniverso">
+                                                                    <p id="headlineuniverso">Universo Servilleta</p>
+                                                                    <p id="info2universo"> <br>Narra la historia de Félix y sus amigos,<br> jóvenes asuncenos en la búsqueda de <br>respuestas a los grandes misterios de la <br>vida, la trascendencia y el amor.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagenmangore">
+                                                                <div id="infomangore">
+                                                                    <p id="headlinemangore">Mangoré</p>
+                                                                    <p id="info2mangore" style="text-align: center">La cinta está inspirada en la vida del guitarrista paraguayo Agustín Barrios y propone una mirada rápida y creativa a través de 50 años de la vida del artista guaraní Mangoré.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                        <div id="imagen">
+                                                                <div id="info">
+                                                                    <p id="headline">Tren Paraguay</p>
+                                                                    <p id="info2" style="text-align: center">Es un documental de creación de Mauricio Rial Banti del 2011 que retrata un viaje por los recuerdos que se inicia en la detenida estación central del ferrocarril, con una mirada orgullosa hacia lo que éste alguna vez fue.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagenmirame">
+                                                                <div id="infomirame">
+                                                                    <p id="headlinemirame">Miramenometokéi</p>
+                                                                    <p id="info2mirame" style="text-align: center">Victoria trata de construir su vida en un mundo de adultos donde todos y todo tienen precio. Debe trazar su destino intentando huir de su ambiente y su novio Aurelio.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagensecuestro">
+                                                                <div id="infosecuestro">
+                                                                    <p id="headlinesecuestro">El Secuestro</p>
+                                                                    <p id="info2secuestro" style="text-align: center">Un joven con talento en la música y con el sueño de triunfar en ese medio conoce al hijo de un poderoso narcotraficante colombiano, quien decide ayudarlo a cambio de que trabaje para él.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagencerro">
+                                                                <div id="infocerro">
+                                                                    <p id="headlinecerro">Cerro Corá</p>
+                                                                    <p id="info2cerro" style="text-align: center">Cerro Corá es una película paraguaya considerada como el primer largometraje de ficción histórica realizado completamente con producción paraguaya, y en formato de 35 milímetros.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>   
+                                                    <tr>
+                                                        <td>
+                                                            <div id="imagenchipa">
+                                                                <div id="infochipa">
+                                                                    <p id="headlinechipa">La Chiperita</p>
+                                                                    <p id="info2chipa" style="text-align: center">Virgilia trabaja vendiendo chipa con su madre y su amiga Juanita en los alrededores de un puesto de peaje paraguayo. Está enamorada de Walter, un joven apuesto y bondadoso que trabaja en el mismo puesto, pero no sabe cómo confesárselo.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagenmorgue">
+                                                                <div id="infomorgue">
+                                                                    <p id="headlinemorgue">Morgue</p>
+                                                                    <p id="info2morgue" style="text-align: center">La historia se trata de una noche en el que Diego Martínez queda encerrado dentro de la morgue del Hospital Regional de Encarnación y relata los sucesos paranormales que pasó el guardia de seguridad del lugar en su turno nocturno.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagencosta">
+                                                                <div id="infocosta">
+                                                                    <p id="headlinecosta">Costa Dulce</p>
+                                                                    <p id="info2costa" style="text-align: center">El joven David pasa las horas entre su hogar y la tarea confiada para arreglar y pintar la casa de alguien que se ha marchado al exterior. Pero el impulso natural por hacerse hombre, hace que David cometa una imprudencia y no cumpla esta tarea.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagenorsai">
+                                                                <div id="infoorsai">
+                                                                    <p id="headlineorsai">Orsai</p>
+                                                                    <p id="info2orsai" style="text-align: center"> Cuenta la historia de Rafael (Alfaro), hermano mayor de una unida familia de Asunción, que maneja la despensa familiar. Por un error de su hermano, la financiera remite a Rafael la citación a una audiencia por embargo de la vivienda familiar.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <div id="imagenlas">
+                                                                <div id="infolas">
+                                                                    <p id="headlinelas">Las Herederas</p>
+                                                                    <p id="info2las" style="text-align: center"> Narra la historia de dos mujeres de alta alcurnia de la sociedad paraguaya que heredaron suficiente patrimonio para vivir cómodamente. Pero a sus 60 años, el dinero ya no alcanza y la situación de ambas cambia. </p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagencari">
+                                                                <div id="infocari">
+                                                                    <p id="headlinecari">Carimea</p>
+                                                                    <p id="info2cari" style="text-align: center">  El eje es la historia de una mujer, víctima de violencia intrafamiliar. Carolina Melania Velero, Carimea, está a punto de ser condenada a 25 años de la cárcel y una siquiatra trata de demostrar que su horrible crimen fue producto de una crisis de demencia temporal, donde se evidencian las secuelas de un sistemático castigo físico y mental.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagensangre">
+                                                                <div id="infosangre">
+                                                                    <p id="headlinesangre">La Sangre y la Semilla</p>
+                                                                    <p id="info2sangre" style="text-align: center"><br> Durante la Guerra de la Triple Alianza en Paraguay, la viuda de un oficial salva a un sargento herido compañero de su esposo, ella ayuda a curarlo y él la protege hasta que nace el niño que esperaba.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagentiempo">
+                                                                <div id="infotiempo">
+                                                                    <p id="headlinetiempo">El Tiempo Nublado</p>
+                                                                    <p id="info2tiempo" style="text-align: center"> Un relato profundo sobre una cuestión universal: la relación de un ser humano con su madre y las dudas que se enfrentan con el correr del tiempo.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <div id="imagenhosp">
+                                                                <div id="infohosp">
+                                                                    <p id="headlinehosp">Hospita de Pobres</p>
+                                                                    <p id="info2hosp" style="text-align: center"> Un joven médico residente, la atractiva hija de una paciente y un hombre que se cree enfermo pero quizás es más sano que los demás, afrontan la dura realidad del hospital más desatendido de todo el sistema público de salud, repleto de pacientes de escasos recursos que claman por atención.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagenchicas">
+                                                                <div id="infochicas">
+                                                                    <p id="headlinechicas">Chicas Nuevas 24hs</p>
+                                                                    <p id="info2chicas" style="text-align: center"><br> Cuenta con los testimonios de víctimas de la trata de personas entre los que se encuentran los de una mujer peruana, una colombiana, una paraguaya y una rumana.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagensupre">
+                                                                <div id="infosupre">
+                                                                    <p id="headlinesupre">El Supremo Manuscrito</p>
+                                                                    <p id="info2supre" style="text-align: center"> <br>Es una coproducción paraguayo mexicano argentina que lleva al espectador a diferentes situaciones dentro de una historia ficticia que gira en torno al manuscrito original de Yo el Supremo escrito por Augusto Roa Bastos. </p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagenhamaca">
+                                                                <div id="infohamaca">
+                                                                    <p id="headlinehamaca">Hamaca Paraguaya</p>
+                                                                    <p id="info2hamaca" style="text-align: center"><br>Un granjero (Ramon Del Rio) viejo y su esposa (Georgina Genes) esperan a que su hijo regrese a casa de la guerra. </p>
+                                                                </div>
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>  
+                                                    <tr>
+                                                        <td>
+                                                             <div id="imagenenamorada">
+                                                                <div id="infoenamorada">
+                                                                    <p id="headlineenamorada">La Enamorada</p>
+                                                                    <p id="info2enamorada" style="text-align: center"> Victoria es una joven taciturna y harapienta que recorre los bosques recolectando hierbas medicinales, y mantiene su virginidad esperando al amor de su vida.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagenesperanza">
+                                                                <div id="infoesperanza">
+                                                                    <p id="headlineesperanza">Esperanza</p>
+                                                                    <p id="info2esperanza" style="text-align: center">Lejos del análisis histórico esta es una historia humana. Es un homenaje a los artistas paraguayos y a todos los que enfrentan dictaduras en el mundo hasta hoy.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                             <div id="imagensanti">
+                                                                <div id="infosanti">
+                                                                    <p id="headlinesanti">Santificar lo Profano</p>
+                                                                    <p id="info2santi" style="text-align: center"><br>Marcos es un seminarista que llega a la Chacarita para prestar sus servicios religiosos. Allí, se encuentra con situaciones que enfrentan las personas que viven en la zona, y conoce su lucha cotidiana por la supervivencia y la superación.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagenleal">
+                                                                <div id="infoleal">
+                                                                    <p id="headlineleal">Leal</p>
+                                                                    <p id="info2leal" style="text-align: center">Un excoronel es nombrado ministro de la Agencia Nacional Antidrogas y forma un grupo paramilitar especial para combatir el narcotráfico en Paraguay.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div id="imagenhojas">
+                                                                <div id="infohojas">
+                                                                    <p id="headlinehojas">El Trueno Entre las Hojas</p>
+                                                                    <p id="info2hojas" style="text-align: center"><br>El trueno cae y queda entre las hojas. Los animales comen las hojas y se ponen violentos. Los hombres comen los animales y se ponen violentos</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagenguarani">
+                                                                <div id="infoguarani">
+                                                                    <p id="headlineguarani">Guarani</p>
+                                                                    <p id="info2guarani" style="text-align: center">Atilio comienza un largo viaje para convencer a Helena de que dé a luz en tierras guaraníes.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagengritos">
+                                                                <div id="infogritos">
+                                                                    <p id="headlinegritos">Gritos del Monday</p>
+                                                                    <p id="info2gritos" style="text-align: center">Un grupo de estudiantes de Ingeniería Ambiental realizan un trabajo en la Reserva Ecológica de los Saltos del Monday. Los alumnos deciden acampar y en medio de la oscura noche, son sorprendidos por un hecho que les afectará por varios días, en especial a una de las estudiantes.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                             <div id="imagenlatas">
+                                                                <div id="infolatas">
+                                                                    <p id="headlinelatas">Latas Vacías</p>
+                                                                    <p id="info2latas" style="text-align: center">relata la historia de un buscador de tesoros enterrados (plata yvyguy) hace 150 años, durante la Guerra de la Triple Alianza, que tras una tragedia huye del campo y sobrevive como reciclador, hasta que aparecen las señales de otro tesoro.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <div id="imagenlos">
+                                                                <div id="infolos">
+                                                                    <p id="headlinelos">Los Buscadores</p>
+                                                                    <p id="info2los" style="text-align: center">Un grupo de amigos se embarca en una aventura por Asunción y sus alrededores siguiendo un mapa que devela el escondite de un tesoro.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagenlibertad">
+                                                                <div id="infolibertad">
+                                                                    <p id="headlinelibertad">Libertad</p>
+                                                                    <p id="info2libertad" style="text-align: center">Francisco es un niño de 13 años, quien pierde a su padre en la Batalla de Tacuary. Allí los milicianos paraguayos derrotan a las tropas del General Manuel Belgrano.Un joven Capitán, Pedro Juan Caballero también pierde a su padre en aquella misma batalla.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagenpy">
+                                                                <div id="infopy">
+                                                                    <p id="headlinepy">Paraguay, Droga y Banana</p>
+                                                                    <p id="info2py" style="text-align: center"><br>Revisa la historia contemporánea del país, dando una nueva mirada a distintos casos con testigos de la época y explicando diferentes sucesos ligados al narcotráfico, su historia y sus inicios que dieron base a lo que hoy se vive.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagenru">
+                                                                <div id="inforu">
+                                                                    <p id="headlineru">Ore Ru</p>
+                                                                    <p id="info2ru" style="text-align: center">Audiovisual querelata cuatro historias de vida durante la espera de la visita del papa Francisco, </p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <div id="imagenmatar">
+                                                                <div id="infomatar">
+                                                                    <p id="headlinematar">Matar a un Muerto</p>
+                                                                    <p id="info2matar" style="text-align: center">Paraguay, 1978. En un remoto paraje del monte paraguayo, durante la dictadura militar, dos hombres se dedican a enterrar cadáveres clandestinamente. Entre los cuerpos que arriban a la orilla cada día, una mañana llega un hombre que aún respira. Los dos enterradores saben que tienen que matarlo pero nunca asesinaron a nadie antes.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagenluna">
+                                                                <div id="infoluna">
+                                                                    <p id="headlineluna">Luna de Cigarras</p>
+                                                                    <p id="info2luna" style="text-align: center">JD Flitner arriba a Asunción para llegar a un acuerdo con el señor del crimen Brasiguayo a fin de cultivar marihuana en terrenos de su propiedad. Las cosas toman un giro oscuro para JD cuando el teniente de Brasiguayo planea un golpe de Estado durante un viaje a través de las calles.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagenfeliz">
+                                                                <div id="infofeliz">
+                                                                    <p id="headlinefeliz">Felices los que Lloran</p>
+                                                                    <p id="info2feliz" style="text-align: center">Relata la historia de un muchacho de familia adinerada, quien no ve mejor opción que aliarse con unos traficantes de barrio para mandarse a mudar de su casa y así dejar de escuchar los reclamos de su padre. </p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagensaber">
+                                                                <div id="infosaber">
+                                                                    <p id="headlinesaber">Saber Crecer</p>
+                                                                    <p id="info2saber" style="text-align: center">La película cuenta la vida de un chico de 17 años que acaba de terminar el colegio con planes de estudiar en el exterior, sin embargo, varios conflictos se presentan en tan sólo 5 días, antes de que parta para iniciar sus estudios universitarios.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div id="imagenburra">
+                                                                <div id="infoburra">
+                                                                    <p id="headlineburra">La Burrerita de Ypacarai</p>
+                                                                    <p id="info2burra" style="text-align: center">La historia de una humilde burrerita, una mujer que es admirada y acosada por los hombres del pueblo por su belleza y su exuberante cuerpo.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagenreden">
+                                                                <div id="inforeden">
+                                                                    <p id="headlinereden">La Redención</p>
+                                                                    <p id="info2reden" style="text-align: center">Don José Villalba, un excombatiente de la Guerra del Chaco (1932-1935) y enfermo terminal, recibe la visita de Marlene, la nieta de un ex camarada. Juntos emprenden un viaje lleno de recuerdos para dar con el paradero del abuelo de Marlene.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div id="imagensuelo">
+                                                                <div id="infosuelo">
+                                                                    <p id="headlinesuelo">Un Suelo Lejano</p>
+                                                                    <p id="info2suelo" style="text-align: center">Un profesor de filosofía viaja dando conferencias por el interior de Paraguay. Su viaje lo lleva a Nueva Germania, una comunidad rural fundada a finales del siglo XIX por la hermana del filósofo Friedrich Nietzsche.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr> 
+                                            </table>
+                    </div>
+                <div id="sidebar">
+                                                           
+                        
+                        
+                        
+    
+    	
+                                           
+</div>
+     
+                                                                                      
+                                      
+                    </div>
+                </div>
+
+                                        <div id="main">
+                                            <div id="navbar">
+                                                <ul class="menu">
+                                                    <li id="home"><a href="inicio.html">Inicio</a></li>
+                                                    <li id="about"><a href="noticias.html">Noticias</a></li>
+                                                    <li id="about"><a href="peliculas.html">Peliculas</a></li>
+                                                    <li id="announcements"><a href="reseñas.hthml">Reseñas</a></li>
+                                                    <li id="archives"><a href="nosotros.html">Nosotros</a></li>
+                                                    <li id="announcements"><a href="contactos.html">Contactos</a></li>
+                                            </div>
+                                          
+                                            <br><br>
+                                            
+
+
+                                                
+                                                
+                                                    
+                                                <!-- start AddThis -->
+                                            
+                                                <!-- end AddThis -->
+                                                
+
+
+                                            </div><!-- content -->
+                                        </div><!-- main -->
+                                        </div><!-- body -->
+
+
+                                        <div id="footer">
+                                            <div id="footerContent">
+                                                <div id="navegacion">
+                                                    <ul class="menu">
+                                                        <li id="home"><a href="inicio.html">Inicio</a></li>
+                                                        <li id="about"><a href="noticias.html">Noticias</a></li>
+                                                        
+                                                        <li class="navItem" id="navItem-1"><a href="nosotros.html">Acerca De</a></li>                                                    
+                                                    </ul>	
+                                                </div>
+                                                <div class="debugStats">
+                                                    <div id="contF">
+                                                        <div id="f1">
+                                                            <p style="text-align: justify !important;">
+								<a href="#">Políticas de Privacidad</a>
+								El responsable del tratamiento de los datos personales del interesado te informa de que estos datos serán tratados de conformidad con lo dispuesto en las normativas vigentes en protección de datos personales, el Reglamento (UE) 2016/679 de 27 de abril de 2016 (RGPD) y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales.</p></div>
+							<div id="f2">
+                                                            <div id=""><p style="text-align: justify !important;"><a href="#"> <p style="text-align: justify !important;">
+								<a href="#">
+                                                            </div>
+                                                        </div></div>
+                                                            <div id="certificaciones">
+                                                                <div class="new">
+                                                                <img src="img/logohtml.png" width="75" height="90"/><br />
+                                                                </div>
+                                                                <div class="new">
+                                                                
+								<img src="img/logocss.png"  width="75" height="90" /> 
+                                                                </a>
+								
+                                                                </a>                                                                
+                                                                </div>
+                                                                <div class="new">
+                                                                <img src="img/logosnpp.jpg" width="135" height="85" style="margin-right: 18px"/><br />
+                                                                </div>
+                                                            </div>
+                                                    <br/><br/>
+                                                </div>
+
+                                            </div><!-- footerContent -->
+                                            <div class="copyright"> 
+                                                <span class="copy">&copy;    2020</span>   
+                                                <span class="org">                                               
+                                                </span> 	
+                                            </div>
+                                            <!-- FOOTPRINT HTML START   PARA CORSALUD-->
+
+                                            <!-- FOOTPRINT HTML END -->
+                                        </div><!-- footer -->
+                                        </body>
+                                        </html>
