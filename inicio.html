@@ -12,21 +12,29 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
 
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/common.css" type="text/css" />
     <style>
         .textoPrincipal{
             font-family: 'Belanosima', sans-serif;
         }
+
+        .btnRedes{
+            font-family: 'Oswald', sans-serif;
+        }
+        .btnRedesFac:hover{
+            background-color: blue;
+            border:solid 2px red;
+            color:red;
+        }
     </style>
     </head>
     
     <body>
-        <div id="container">
-            
-            
+        <div id="container"></div>
             <div id="header">
                 <div id="headerTitle">
                     <h1>
@@ -37,98 +45,102 @@
             <div id="body">
                 <div id="sidebar">
                     <div id="rightSidebar">                                             
-                        
-                        <div class="block custom" id="customblock-Redes-sociales" >
-                            <table style="border-spacing: 20px 8px">                                
+                        <div class="block custom" id="customblock-Redes-sociales" style="display:flex;justify-content: center;text-align: center;border:none;" >
+                            <table style="border-spacing: 20px 8px;">                                
                                     <tr>
-                                        <td><a href="#"></a></td>
-                                        <td style="text-align: center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                                          </svg><label style="color: #000 ">Whatsapp</label></td>
+                                        <td style="text-align: center;padding: 10px;">
+                                            <button type="button" class="btn btn-primary btnRedes" style="background: #3b5998;border:none;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                                </svg>Facebook
+                                            </button>
+                                            </td>
                                     </tr>
-                                    <tr>
-                                        <td><a href="#" ></a></span></td>
-                                        <td style="text-align: center"><label style="color: #000"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                                          </svg>Twitter</label></td>   
+                                    <tr>                        
+                                        <td style="text-align: center;padding: 10px;">
+                                            <button type="button" class="btn btn-primary btnRedes" style="background-color:  #00acee;border:none;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                                </svg>Twitter
+                                            </button>
+                                        </td>                                           
                                     </tr>   
-                                    <tr>
-                                        <td><a href="#" target="_blank"></a></td>
-                                        <td style="text-align: center"><label style="color: #000"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                                            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                                          </svg>Whatsapp</label></td>   
+                                    <tr>                                           
+                                        <td style="text-align: center;padding: 10px;">
+                                            <button type="button" class="btn btn-primary btnRedes" style="background-color: #25D366;border:none;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                                                </svg>Whatsapp
+                                            </button>
+                                        </td>   
                                     </tr>    
                             </table>                            
                         </div>	 
                         <b>Buscador de Google:</span><br><br>
-                                    <div class="divinput" style="border-color: #00cc00; margin-left: 16px">					       
-                                    
-                                    <script async src="https://cse.google.com/cse.js?cx=017322060444985110371:0flnd3xrqqk" ></script>
-<div class="gcse-search"></div>
-                                    
+                            <div class="divinput" style="border-color: #00cc00; margin-left: 16px">					     
+                                <script async src="https://cse.google.com/cse.js?cx=017322060444985110371:0flnd3xrqqk" ></script>
+                                <div class="gcse-search"></div>          
+                            </div>
+                                <br><br><br>
+                            <div class="block custom" id="customblock-Importante">
+                                    <div id="sidebarInformation">
+                                        <span class="blockTitle">Votá por tu favorita:</span>
+                                    </div>
+                                    <ul>
+                                        <li><span style="font-size: small;"><input type="radio" name="directores" value="7cajas" />7 Cajas</span></li>
+                                        <li><span style="font-size: small;"><input type="radio" name="directores" value="losbuscadores" />Los Buscadores</span></li>
+                                        <li><span style="font-size: small;"><input type="radio" name="directores" value="hamaca" />Hamaca Paraguaya</span></li>
+                                        <li><span style="font-size: small;"><input type="radio" name="directores" value="latas" />Latas Vacias</span></li>   
+                                        <li><span style="font-size: small;"><input type="radio" name="directores" value="guarani" />Guaraní</span></li> 
+                                        <li style="text-align: center"><br><button onclick="alert ('Gracias por votar.')" style="width: 80px;  height: 30px; ">Votar</button></li>
+                                    </ul>
+                            </div>	
+                            <div class="block custom" id="customblock-Indexados-en">
+                                <div id="sidebarIndexadaen"><span class="blockTitle">Recomendadas:</span>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="https://www.youtube.com/watch?v=tPSLRgKpF_Q" title="Leal" target="_blank"><img  style="padding:3px" src="img/leal.jpg" alt="scholar"  /></a></td>
+                                                <td><a href="https://www.youtube.com/watch?v=rt04RzIWMFc" title="Ore Ru" target="_blank"><img style="padding:3px" src="img/oreru.png" alt="bvs"  /></a></td>
+                                                <td><a href="https://vimeo.com/210929769" title="Un Suelo Lejano" target="_blank"><img style="padding:3px" src="img/unsuelolejano.jpg" alt="scielo"  /></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="https://www.youtube.com/watch?v=T3_ivPpobLI" title="Los Buscadores" target="_blank"><img style="padding:3px" src="img/losbuscadores.jpg" alt="latindex1" /></a></td>
+                                                <td><a href="https://www.youtube.com/watch?v=t1ax_XInBLE" title="7 Cajas" target="_blank"><img style="padding:3px" src="img/7cajas.jpg" alt="secimed"  /></a></td>
+                                                <td><a href="https://www.youtube.com/watch?v=9S5ijb0Kbpg" title="Luna de Cigarras" target="_blank"><img style="padding:3px" src="img/lunadecigarras.jpg" alt="medigraphic"  /></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="https://www.youtube.com/watch?v=bHXlZ5P3hRc" title="Mangoré" target="_blank"><img style="padding:3px"  src="img/mangore.jpg" alt="imbiomed"  /></a></td>
+                                                <td><a href="https://www.youtube.com/watch?v=5GPy6rWfBP0" title="Cerro Corá" target="_blank"><img style="padding:3px" src="img/cerrocora.jpg" alt="gfmer"  /></a></td>
+                                                <td><a href="https://www.youtube.com/watch?v=XGjuCbQ-gd4" title="Felices los que Llorán" target="_blank"><img style="padding:3px" src="img/feliceslosquelloran.jpg" alt="WorldCat"  /></a></td>
+                                            </tr>   
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>	
+                            <div class="block" id="sidebarRTArticleTools">
+                                <span class="blockTitle">Entrevistas:</span>
+                                    <div class="articleToolItem">
+                                    <iframe width="320" height="240" src="https://www.youtube.com/embed/hxYRdTmUtS8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                                    
+                                    </div>                                            
+                            </div>
+                            <div class="block custom" id="customblock-Sitios-de-Inter-s">
+                                <div id="sidebarInformation"><span class="blockTitle">Sitios De Streaming Oficiales:</span></div>
+                                <p><a href="https://www.netflix.com/py/" target="_blank"><span style="font-size: x-small;"><img style="display: block; margin-left: auto; margin-right: auto;" src="img/netflix.jpg"  width="180" height="75" /></span></a></p>
+                                <p><a href="https://www.primevideo.com/?ref_=dvm_pds_amz_PY_kc_s_g|m_4ubLxYmkc_c292950245963" target="_blank"><span style="font-size: x-small;"><img style="display: block; margin-left: auto; margin-right: auto;" src="img/amazonprimevideo.jpg"  width="180" height="80" /></span></a></p>
+                                <p><a href="https://www.hbolatam.com/hbogo" target="_blank"><span style="font-size: x-small;"><img style="display: block; margin-left: auto; margin-right: auto;" src="img/hbogo.png"  width="180" height="80" /></span></a></p>
+                            </div>                       
                         </div>
-<br><br><br>
-    <div class="block custom" id="customblock-Importante">
-        <div id="sidebarInformation"><span class="blockTitle">Votá por tu favorita:</span>
-        </div>
-    <ul>
-        <li><span style="font-size: small;"><input type="radio" name="directores" value="7cajas" />7 Cajas</span></li>
-        <li><span style="font-size: small;"><input type="radio" name="directores" value="losbuscadores" />Los Buscadores</span></li>
-        <li><span style="font-size: small;"><input type="radio" name="directores" value="hamaca" />Hamaca Paraguaya</span></li>
-        <li><span style="font-size: small;"><input type="radio" name="directores" value="latas" />Latas Vacias</span></li>   
-        <li><span style="font-size: small;"><input type="radio" name="directores" value="guarani" />Guaraní</span></li> 
-        <li style="text-align: center"><br><button onclick="alert ('Gracias por votar.')" style="width: 80px;  height: 30px; "> <font size="3">Votar</font></button></li>
-    </ul>
-    </div>	
-    <div class="block custom" id="customblock-Indexados-en">
-        <div id="sidebarIndexadaen"><span class="blockTitle">Recomendadas:</span>
-            <table>
-            <tbody>
-                <tr>
-                    <td><a href="https://www.youtube.com/watch?v=tPSLRgKpF_Q" title="Leal" target="_blank"><img  style="padding:3px" src="img/leal.jpg" alt="scholar"  /></a></td>
-                    <td><a href="https://www.youtube.com/watch?v=rt04RzIWMFc" title="Ore Ru" target="_blank"><img style="padding:3px" src="img/oreru.png" alt="bvs"  /></a></td>
-                    <td><a href="https://vimeo.com/210929769" title="Un Suelo Lejano" target="_blank"><img style="padding:3px" src="img/unsuelolejano.jpg" alt="scielo"  /></a></td>
-                </tr>
-                <tr>
-                    <td><a href="https://www.youtube.com/watch?v=T3_ivPpobLI" title="Los Buscadores" target="_blank"><img style="padding:3px" src="img/losbuscadores.jpg" alt="latindex1" /></a></td>
-                    <td><a href="https://www.youtube.com/watch?v=t1ax_XInBLE" title="7 Cajas" target="_blank"><img style="padding:3px" src="img/7cajas.jpg" alt="secimed"  /></a></td>
-                    <td><a href="https://www.youtube.com/watch?v=9S5ijb0Kbpg" title="Luna de Cigarras" target="_blank"><img style="padding:3px" src="img/lunadecigarras.jpg" alt="medigraphic"  /></a></td>
-                </tr>
-                <tr>
-                    <td><a href="https://www.youtube.com/watch?v=bHXlZ5P3hRc" title="Mangoré" target="_blank"><img style="padding:3px"  src="img/mangore.jpg" alt="imbiomed"  /></a></td>
-                    <td><a href="https://www.youtube.com/watch?v=5GPy6rWfBP0" title="Cerro Corá" target="_blank"><img style="padding:3px" src="img/cerrocora.jpg" alt="gfmer"  /></a></td>
-                    <td><a href="https://www.youtube.com/watch?v=XGjuCbQ-gd4" title="Felices los que Llorán" target="_blank"><img style="padding:3px" src="img/feliceslosquelloran.jpg" alt="WorldCat"  /></a></td>
-                </tr>   
-            </tbody>
-            </table>
-        </div>
-    </div>	
-<div class="block" id="sidebarRTArticleTools">
-    <span class="blockTitle">Entrevistas:</span>
-        <div class="articleToolItem">
-        <iframe width="320" height="240" src="https://www.youtube.com/embed/hxYRdTmUtS8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                                    
-        </div>                                            
-</div>
-<div class="block custom" id="customblock-Sitios-de-Inter-s">
-    <div id="sidebarInformation"><span class="blockTitle">Sitios De Streaming Oficiales:</span></div>
-    <p><a href="https://www.netflix.com/py/" target="_blank"><span style="font-size: x-small;"><img style="display: block; margin-left: auto; margin-right: auto;" src="img/netflix.jpg"  width="180" height="75" /></span></a></p>
-    <p><a href="https://www.primevideo.com/?ref_=dvm_pds_amz_PY_kc_s_g|m_4ubLxYmkc_c292950245963" target="_blank"><span style="font-size: x-small;"><img style="display: block; margin-left: auto; margin-right: auto;" src="img/amazonprimevideo.jpg"  width="180" height="80" /></span></a></p>
-    <p><a href="https://www.hbolatam.com/hbogo" target="_blank"><span style="font-size: x-small;"><img style="display: block; margin-left: auto; margin-right: auto;" src="img/hbogo.png"  width="180" height="80" /></span></a></p>
-</div>     
-                                                                                      
-                                      
                     </div>
-                </div>
-
-                                        <div id="main">
-                                            <div id="navbar">
-                                                <ul class="menu">
-                                                    <li id="home"><a href="inicio.html">Inicio</a></li>
-                                                    <li id="about"><a href="noticias.html">Noticias</a></li>
-                                                    <li id="about"><a href="peliculas.html">Peliculas</a></li>
-                                                    <li id="announcements"><a href="contactos.html">Reseñas</a></li>
-                                                    <li id="archives"><a href="nosotros.html">Nosotros</a></li>
-                                                    <li id="announcements"><a href="contactos.html">Contactos</a></li>
+                    <div id="main">
+                        <div id="navbar">
+                            <ul class="menu">
+                                <li id="home"><a href="inicio.html">Inicio</a></li>
+                                <li id="about"><a href="noticias.html">Noticias</a></li>
+                                <li id="about"><a href="peliculas.html">Peliculas</a></li>
+                                <li id="announcements"><a href="contactos.html">Reseñas</a></li>
+                                <li id="archives"><a href="nosotros.html">Nosotros</a></li>
+                                <li id="announcements"><a href="contactos.html">Contactos</a></li>
                                                     
                                             </div>
                                             <div id="breadcrumb">
