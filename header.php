@@ -31,19 +31,19 @@
               <a class="nav-link active" aria-current="page" href="#" style="color:white;font-family: 'Noto Sans TC', sans-serif;font-size:18px">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#" style="color:white;font-family: 'Noto Sans TC', sans-serif;font-size:18px">Noticias</a>
+              <a class="nav-link " href="noticias.php" style="color:white;font-family: 'Noto Sans TC', sans-serif;font-size:18px">Noticias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#" style="color:white;font-family: 'Noto Sans TC', sans-serif;font-size:18px">Peliculas</a>
+              <a class="nav-link " href="peliculas.php" style="color:white;font-family: 'Noto Sans TC', sans-serif;font-size:18px">Peliculas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="#" style="color:white;font-family: 'Noto Sans TC', sans-serif;font-size:18px">Reseñas</a>
+              <a class="nav-link"  href="reseñas.php" style="color:white;font-family: 'Noto Sans TC', sans-serif;font-size:18px">Reseñas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link "  href="#" style="color:white;font-family: 'Noto Sans TC', sans-serif;font-size:18px">Nosotros</a>
+              <a class="nav-link "  href="nosotros.php" style="color:white;font-family: 'Noto Sans TC', sans-serif;font-size:18px">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color:white;font-family: 'Noto Sans TC', sans-serif;font-size:18px" href="#">Contacto</a>
+              <a class="nav-link" style="color:white;font-family: 'Noto Sans TC', sans-serif;font-size:18px" href="contacto.php">Contacto</a>
             </li>
           </ul>
         </div>
