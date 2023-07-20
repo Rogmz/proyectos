@@ -28,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" style="color:white;font-family: 'Noto Sans TC', sans-serif;font-size:18px">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="index.php" style="color:white;font-family: 'Noto Sans TC', sans-serif;font-size:18px">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="noticias.php" style="color:white;font-family: 'Noto Sans TC', sans-serif;font-size:18px">Noticias</a>

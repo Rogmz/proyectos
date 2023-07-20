@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" style="display:inline;">
     <div class="card-header">
         Inicio | Noticias | Acerca De
     </div>
